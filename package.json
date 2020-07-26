@@ -1,0 +1,36 @@
+{
+  "name": "event-gestion-app-itrust",
+  "version": "1.0.0",
+  "description": "Crud events gestion app using React js, Node js, Express, MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaderDiarra/crud_app_event_gestion_itrust.git"
+  },
+  "keywords": [
+    "server",
+    "http",
+    "api",
+    "rest",
+    "nodejs",
+    "express",
+    "mysql",
+    "sequelize"
+  ],
+  "author": "Kader Diarra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaderDiarra/crud_app_event_gestion_itrust/issues"
+  },
+  "homepage": "https://github.com/kaderDiarra/crud_app_event_gestion_itrust#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.3"
+  }
+}
