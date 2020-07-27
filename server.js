@@ -2,6 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+var apiRouter = require("./apiRouter").router;
 
 // PORT
 const PORT = process.env.PORT || 3000;
@@ -24,6 +25,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) => {
     res.json({message: "Itrut CRUD events gestion"});
 });
+
+app.use("/app/", apiRouter);
 
 const db = require("./models");
 db.sequelize.sync();
