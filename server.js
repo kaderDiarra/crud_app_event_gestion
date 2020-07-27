@@ -16,7 +16,7 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-// parse incoming request with body-parser middleware
+// Body parser configuration
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -24,6 +24,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get("/", (req, res) => {
     res.json({message: "Itrut CRUD events gestion"});
 });
+
+const db = require("./models");
+db.sequelize.sync();
 
 // Launch server
 app.listen(PORT, () => {
